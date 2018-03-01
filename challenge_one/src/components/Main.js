@@ -9,21 +9,15 @@ const Main = () => {
         <div>
           <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
             <h1 className="display-4">Challenge One</h1>
-            <p className="lead">Componente ColorView: dado um código de cor em RGB (em decimal e em hexa) mostrar a cor em si (tratando a diferença entre decimal e hexa).</p>
+            <p className="lead"></p>
           </div>
-
           <div className="container">
-            <div className="card-deck mb-3 text-center">
+            <div className="card-deck mb-4 text-center">
+
               <Countdown />
-              <div className="card mb-4 box-shadow">
-                <div className="card-header">
-                  <h4 className="my-0 font-weight-normal">FriendDate</h4>
-                </div>
-                <div className="card-body">
-                    <FriendDate />
-                </div>
-              </div>
+              <FriendDate />
               <ColorView />
+
             </div>
           </div>
         </div>

@@ -25,7 +25,7 @@ class ColorView extends Component{
             </div>
             <div className="card-body">
                 <h1 className="card-title pricing-card-title">
-                <div style={{"backgroundColor":color}} className="colordivbig rounded">
+                <div style={{"backgroundColor":color}} className="border border-dark rounded">
                     <div className="hexcolor">{color}</div>
                 </div>
                 </h1>

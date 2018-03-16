@@ -67,3 +67,4 @@ const Distancia = props = {
 ```
 
 ## LESSON 2
+### Children 

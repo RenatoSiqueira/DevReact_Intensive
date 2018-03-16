@@ -6,8 +6,25 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Button, Welcome } from '@storybook/react/demo';
 
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+//import ChildrenTest from '../ChildrenTest'
 
-storiesOf('Button', module)
-  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-  .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
+storiesOf('Welcome', module)
+  .add('to Storybook', () => <Welcome showApp={linkTo('Button')} />)
+
+/*
+Look at story file
+
+storiesOf('ChildrenTest', module)
+  .add('with text', () => <ChildrenTest>Some Text</ChildrenTest>)
+*/
+
+/* To import All files with '.story.js' in prefix name */
+import { configure } from '@storybook/react'
+const req = require.context('../', true, /\.story\.js$/)
+function loadStories(){
+  req.keys().forEach( filename => {
+    req(filename)
+  })
+}
+
+configure(loadStories, module)

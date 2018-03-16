@@ -68,3 +68,13 @@ const Distancia = props = {
 
 ## LESSON 2
 ### Children 
+```
+const Box = props => {
+    return <div>{props.children}<div>
+}
+
+How to use: 
+<Box>Value to pass with props</Box>
+<Box><h1>Value to pass with props</h1></Box>
+```
+

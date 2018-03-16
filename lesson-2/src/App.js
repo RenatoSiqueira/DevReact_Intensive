@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import ChildrenTest from './ChildrenTest'
+import MeuIp from './MeuIp'
 
 class App extends Component {
   render() {
@@ -13,10 +13,11 @@ class App extends Component {
         </ChildrenTest>
         <ChildrenTest>
           <h2>Test with Children and Component Styled</h2>
-        </ChildrenTest>        
+        </ChildrenTest>
+        <MeuIp />
       </div>
     );
   }
 }
 
-export default App;
+export default App

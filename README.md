@@ -78,3 +78,6 @@ How to use:
 <Box><h1>Value to pass with props</h1></Box>
 ```
 
+### High Order Component [HOC]
+- Component receives component
+- withHTTP [case of study]

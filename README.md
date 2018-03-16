@@ -1,5 +1,6 @@
 ## Annotations of DevReact BootCamp - Intensive
 
+## LESSON 1
 ### Functional Stateless Component example
 ```
 const Comp1 = props => <h1>Teste</h1>
@@ -33,4 +34,36 @@ const distanciaMi = 10
 <Distance distance={DistanceMi} unit={'km'}/>
 ```
 
-Stopped at 36:42
+### StoryBook
+
+#### Commands to Install
+```
+npm i --save-dev @storybook/cli
+getstorybook
+yarn run storybook
+
+Note¹: Command Build for export to html
+```
+
+
+### Styled Components
+```
+import styled from 'styled-components'
+
+const Red = styled.span`
+    color: red;    
+`
+
+const Box = styled.p`
+    background-color: grey;
+`
+
+const Distancia = props = {
+    if(props.unit === 'km'){
+        return <Box>{(props.distance * 1.60934).toFixed(2)} <Red>km</Red></Box>
+    }
+    return <p>{(props.distance).toFixed(2)} mi</p> 
+}
+```
+
+## LESSON 2

@@ -81,3 +81,11 @@ How to use:
 ### High Order Component [HOC]
 - Component receives component
 - withHTTP [case of study]
+
+### React Router DOM
+- It´s a react router for web
+- Don´t use 'path' instruction for 404 error treatment
+- Use 'switch' for prevent stack up routes
+
+### Redux
+- 1:19:12

@@ -15,7 +15,7 @@ const Main = () => {
             <div className="card-deck mb-4 text-center">
 
               <Countdown initialDate='December 25, 2018'/>
-              <FriendDate />
+              <FriendDate data='17 de Março, 2018'/>
               <ColorView initialColor='#F7F7F7'/>
 
             </div>

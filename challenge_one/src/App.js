@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import Header from './components/Header'
 import Main from './components/Main'
-//import Footer from './components/Footer'  TO-DO: Add more later
+import Footer from './components/Footer'
 
 class App extends Component {
   render() {
@@ -10,6 +10,7 @@ class App extends Component {
        <div>
          <Header />
          <Main />
+         <Footer />
        </div>
     )
   }

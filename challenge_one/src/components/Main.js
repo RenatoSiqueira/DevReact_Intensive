@@ -8,15 +8,15 @@ const Main = () => {
     return(
         <div>
           <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 className="display-4">Challenge One</h1>
+            <h1 className="display-4"><strong>Challenge One</strong></h1>
             <p className="lead"></p>
           </div>
           <div className="container">
             <div className="card-deck mb-4 text-center">
 
-              <Countdown />
+              <Countdown initialDate='December 25, 2018'/>
               <FriendDate />
-              <ColorView />
+              <ColorView initialColor='#F7F7F7'/>
 
             </div>
           </div>

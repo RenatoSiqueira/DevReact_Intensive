@@ -7,16 +7,17 @@ class Countdown extends Component{
         super(props)
 
         this.state = {
-            end: 'December 25, 2018'
+            end: this.props.initialDate
         }
-
         this.onKeyDown = this.onKeyDown.bind(this)
     }
 
     changeEnd(){
-        this.setState({
-            end: this.state.newEnd
-        })
+        if(this.refs.inputCountdown.value){
+            this.setState({
+                end: this.state.newEnd
+            })
+        }
     }
 
     onKeyDown(event){
@@ -34,7 +35,9 @@ class Countdown extends Component{
                   <h4 className="my-0 font-weight-normal">CountDown</h4>
                 </div>
                 <div className="card-body">
-                <h1 className="card-title pricing-card-title"><CountdownClock end={this.state.end}/></h1>
+                <h1 className="card-title pricing-card-title">
+                    <CountdownClock end={this.state.end}/>
+                </h1>
                 <div className="mt-3 mb-4">
                     <label>{this.state.end}</label>
                     <input 

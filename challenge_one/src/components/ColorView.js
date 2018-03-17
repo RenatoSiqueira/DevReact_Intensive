@@ -5,9 +5,8 @@ class ColorView extends Component{
         super(props)
 
         this.state = {
-            color: '#F7F7F7'
+            color: this.props.initialColor
         }
-
         this.onKeyUp = this.onKeyUp.bind(this)
     }
 

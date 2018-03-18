@@ -18,8 +18,6 @@ function pure(param1){
 }
 ```
 
-### Recompose (???)
-
 ### Date/Hour/Distance/...
 ```
 const Distancia = props = {

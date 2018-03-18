@@ -42,12 +42,12 @@ class Countdown extends Component{
                     <label>{this.state.end}</label>
                     <input 
                         ref="inputCountdown"
-                        onChange={ (event)=>this.setState({newEnd:event.target.value}) } 
+                        onChange={ (event)=>this.setState({ newEnd:event.target.value }) } 
                         onKeyDown={this.onKeyDown}
                         type="text" className="form-control" placeholder="December 25, 2018"/>
                 </div>
                 <button 
-                    onClick={ () => this.changeEnd()}
+                    onClick={ () => this.changeEnd() }
                     type="button" className="btn btn-lg btn-block btn-outline-primary">Run!</button>
                 </div>
             </div>

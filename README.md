@@ -88,4 +88,8 @@ How to use:
 - Use 'switch' for prevent stack up routes
 
 ### Redux
-- 1:19:12
+- Lesson 2 - Redux with node only for simple example
+- Lesson 2 - Adding the redux concepts
+
+
+## LESSON 3

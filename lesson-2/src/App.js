@@ -45,6 +45,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
+          <div>{this.state.store}</div>
           <button onClick={ () => store.dispatch(soma) }>Somar</button>
           <ChildrenTest>
             <h1>Test with Children and Component Styled</h1>

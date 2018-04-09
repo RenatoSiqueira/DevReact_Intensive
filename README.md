@@ -91,4 +91,6 @@ How to use:
 
 
 ## LESSON 3
+- Redux
+- Redux-Saga
 - Runs Live 

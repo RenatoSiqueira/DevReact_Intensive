@@ -6,6 +6,7 @@ import { Provider } from 'react-redux'
 import store from './redux'
 
 import Teste from './Teste'
+import Ip from './ip'
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
             <h1 className="App-title">Welcome to React</h1>
           </header>
           <Teste />
+          <Ip />
         </div>
       </Provider>
     )
